@@ -8,7 +8,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,17 +15,35 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  position: fixed;
+  top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country-list-container {
+  position: fixed;
+  top: 143px;
+  height: 50%;
+  overflow-x: hidden;
+}
+
+input, select{
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid darkgrey;
+  box-sizing: border-box;
+}
+
+.dropdown-item{
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: lightgrey;
 }
